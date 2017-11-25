@@ -1,0 +1,49 @@
+@import "reset";
+@import 'grid';
+@import 'header';
+@import 'nav';
+body{
+    line-height: 1.4;
+}
+.hide{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    position: absolute;
+}
+svg text{
+    @extend .hide;
+}
+a{
+    &:hover,
+    &:focus{
+        text-decoration: none;
+    }
+}
+.thumbnail-gallery img{
+    max-width:200px;
+}
+img,
+picture,
+video{
+    //width: 100%; this makes the element expand to fit container
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,blockquote{
+    margin:1em 0;
+}
+h1,
+.siteTitle{ font-size: 2em;}
+h2{ font-size: 1.875em;}
+h3{ font-size: 1.75em}
+h4{ font-size: 1.5em;}
+h5{ font-size: 1.25em;}
+h6{ font-size: 1.125em;}
+blockquote{
+    margin: 1em 1em 1em 2em;
+    border-left: 4px solid #000;
+    padding-left: 1em;
+}
+@import 'footer';

@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; box-sizing: border-box; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.wrapper { display: grid; grid-template-columns: 100%; padding: 0; }
+
+nav { grid-row: 1; grid-column: 1; }
+
+header, article, aside, nav footer { background-color: #ccc !important; padding: 0 1em; }
+
+@media screen and (min-width: 40.063em) { .wrapper { grid-template-columns: 67% 30%; grid-gap: 0; }
+  header { grid-column: 2; grid-row: 1; padding: 0 1em; }
+  nav { grid-column: 2/3; grid-row: 2; }
+  article { grid-row: 1/4; padding: 0 1em; }
+  aside { grid-row: 5; grid-column: 1; padding: 0 1em; }
+  footer { grid-row: 6; grid-column: 1/3; } }
+@media screen and (min-width: 64.063em) { .wrapper { margin: 0 auto; max-width: 80em; grid-template-columns: 30% 67%; grid-gap: 0; }
+  header { grid-row: 1; grid-column: 1/3; }
+  nav { grid-row: 2; grid-column: 1/3; }
+  article { grid-row: 3; grid-column: 2/3; }
+  aside { grid-row: 3; grid-column: 1; }
+  footer { grid-row: 4; grid-column: 1/3; } }
+header { position: relative; }
+
+nav { width: 0; overflow: hidden; position: fixed; top: 0; right: -250px; height: 100%; z-index: 10; transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); background-color: #282829; color: #fff; }
+nav ul { list-style: none; margin: 0; padding: 0; line-height: 1.3; }
+nav li.active a, nav li:hover a, nav li:focus a { text-decoration: underline; }
+nav a { text-decoration: none; color: #fff; display: block; padding: 1em 3em; }
+
+nav#nav:target { display: block; transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); right: 0; width: 15em; padding: 0; overflow-y: visible; z-index: 500; }
+
+nav#nav:target + #dark-cover { position: fixed; top: 0; width: 100%; height: 100%; z-index: 200; background-color: rgba(0, 0, 0, 0.7); transition: background-color 150ms ease; }
+nav#nav:target + #dark-cover:hover { cursor: pointer; }
+
+nav#mobile-nav:target + #dark-cover + #outer-wrap { overflow: hidden; }
+
+#nav-button { position: absolute; top: -1em; right: 0; }
+
+.close-icon { width: 1em; height: 1em; color: #fff; fill: #fff; }
+
+.mobile-menu { width: 4.5em; height: 2.5em; }
+
+@media screen and (min-width: 40.063em) { #nav-button, #dark-cover { display: none; }
+  nav { width: auto; position: relative; right: auto; z-index: 0; background-color: #ccc; color: #000; }
+  nav#nav:target { width: auto; overflow: auto; z-index: 0; transition: none; }
+  nav .close { display: block; height: 0; overflow: hidden; width: 0; }
+  nav a { text-decoration: none; color: #000; } }
+@media screen and (min-width: 64.063em) { nav ul { text-align: center; margin: 0 auto; }
+  nav ul li { display: inline-block; } }
+body { line-height: 1.4; }
+
+.hide, svg text { display: block; height: 0; overflow: hidden; width: 0; position: absolute; }
+
+a:hover, a:focus { text-decoration: none; }
+
+.thumbnail-gallery img { max-width: 200px; }
+
+img, picture, video { max-width: 100%; height: auto; }
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, blockquote { margin: 1em 0; }
+
+h1, .siteTitle { font-size: 2em; }
+
+h2 { font-size: 1.875em; }
+
+h3 { font-size: 1.75em; }
+
+h4 { font-size: 1.5em; }
+
+h5 { font-size: 1.25em; }
+
+h6 { font-size: 1.125em; }
+
+blockquote { margin: 1em 1em 1em 2em; border-left: 4px solid #000; padding-left: 1em; }
+
+#back-top { position: fixed; bottom: 1em; right: 1em; text-align: center; display: none; }
+#back-top a { color: #000; display: block; }
+#back-top a svg { opacity: 0.25; }
+#back-top a:hover svg, #back-top a:focus svg { opacity: 0.50; }
+
+.back-top { width: 4em; height: 4em; }
+
+footer { text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

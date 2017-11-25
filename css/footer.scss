@@ -1,0 +1,27 @@
+#back-top{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    text-align: center;
+    display: none;
+    a{
+        color: #000;
+        display: block;
+    }
+    a svg{
+        opacity:0.25;
+    }
+    a:hover,
+    a:focus{
+        svg{
+            opacity: 0.50;
+        }
+    }
+}
+.back-top{
+    width: 4em;
+    height: 4em;
+}
+footer{
+    text-align: center;
+}
