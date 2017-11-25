@@ -1,17 +1,17 @@
 <body<?php if($home == "1"){?> class="home"<?php }?>>
-    <p class="hide"><a href="#content">skip to main content</a></p>
-<div class="wrapper">
-    <div class="banner<?php if($home == '1'){?> home<?php}?>">
+<p class="hide"><a href="#content">skip to main content</a></p>
+<div class="banner <?php if($home == "1"){?> home <?php }?>">
+    <div class="wrapper">
         <header>
             <?php
             if($home == "1"){
             ?>
-                <h1 class="siteTitle"><a href="/">CSS Grid Layout Example</a></h1>
+                <h1 class="siteTitle"><a href="/"><?php echo $pageTitle; ?></a></h1>
             <?php
             }
             else{
             ?>
-                <p class="siteTitle"><a href="/">CSS Grid Layout Example</a></p>
+                <p class="siteTitle"><a href="/"><?php echo $pageTitle; ?></a></p>
             <?php
             }
             ?>
@@ -25,3 +25,5 @@
             </p>
         </header>
     </div>
+</div>
+<div class="wrapper">
