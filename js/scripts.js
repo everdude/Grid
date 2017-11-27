@@ -1,5 +1,5 @@
 $(function(){
-	/* back to top */
+	/* back to top */ 
 	// fade in #back-top
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 100){
