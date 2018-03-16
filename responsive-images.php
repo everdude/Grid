@@ -19,6 +19,7 @@
                 <img src="/images/IE_stepBro.jpg" alt="step brothers meme">
             </picture>
             <h1>Responsive Images</h1>
+            <p>Do a writeup on how these work here.......</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc non est positum in nostra actione. <a href='http://loripsum.net/' target='_blank'>Sed nimis multa.</a> Omnia contraria, quos etiam insanos esse vultis. <mark>Id Sextilius factum negabat.</mark> Duo Reges: constructio interrete. Quid enim est a Chrysippo praetermissum in Stoicis? <i>Respondeat totidem verbis.</i> Itaque contra est, ac dicitis; Illis videtur, qui illud non dubitant bonum dicere -; </p>
 

@@ -9,6 +9,7 @@
     <?php require_once('includes/header.php'); ?>
         <article id="content">
             <h1>Image Gallery</h1>
+            <p>maybe instead see if i can do these using grid and add some more of my artwork for images. Then do a write up on how it works. maybe on a subpage or something.</p>
             <div class="gallery">
             <?php
                 $dirName = "images/gallery/";
@@ -40,7 +41,7 @@
             </div>
         </article>
         <aside id="sideBar">
-
+            <p>could put the link to the writeup here or something.</p>
         </aside>
         <?php require_once('includes/footer.php'); ?>
     </body>

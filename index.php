@@ -11,7 +11,7 @@
             <h2>Body content goes here</h2>
         </article>
         <aside id="sideBar">
-
+            <h2>Sidbar conent goes here</h2>
         </aside>
         <?php require_once('includes/footer.php'); ?>
     </body>
