@@ -24,10 +24,19 @@
         				<ul class="thumbnail-gallery">
             <?php
                     }
+                    list($width, $height) = getimagesize($image);
+                    $ratio = $width / $height;
             ?>
-                    <li>
-                        <a href="#" onclick="getElementById('gallery').src=getElementById('thumb<?php echo $i; ?>').src;">
-        				<img alt="" id="thumb<?php echo $i; ?>" src="<?php echo $image; ?>">
+                    <li <?php
+                    if ($ratio > "2.5") {
+                        echo "class='wide'";
+                    }
+                    elseif ($ratio < ".5") {
+                        echo "class='tall'";
+                    } ?> >
+                        <!-- <p>width: <?php echo $width;?> height: <?php echo $height;?> ratio: <?php echo $ratio;?></p> -->
+                        <a href="#gallery" onclick="getElementById('gallery').src=getElementById('thumb<?php echo $i; ?>').src;">
+        				<img alt="width: <?php echo $width;?> height: <?php echo $height;?> ratio: <?php echo $ratio;?>" id="thumb<?php echo $i; ?>" src="<?php echo $image; ?>">
                         </a>
         			</li>
             <?php
@@ -39,6 +48,7 @@
                 }
             ?>
             </div>
+
         </article>
         <aside id="sideBar">
             <p>could put the link to the writeup here or something.</p>
