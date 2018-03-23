@@ -17,13 +17,46 @@
 </nav>
 <div id="dark-cover" aria-label="Mobile Only - on click, close mobile menu"></div>
 <footer>
-    <p class="copywrite">&copy; <?php echo "2017"; //date("Y"); ?> <a href="/">Brad Everett</a>. All Rights Reserved.</p>
+    <p class="copywrite">&copy; <?php echo date("Y"); ?> <a href="/">Brad Everett</a>. All Rights Reserved.</p>
 </footer>
 <p id="back-top"><a href="#top" title="back to top">
     <svg class="back-top"><use xlink:href="#upArrow"></use></svg><br>back to top</a>
 </p>
 </div><!-- end wrapper -->
 <?php require_once('includes/svg.html'); ?>
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
 <script defer src="/js/scripts.min.js"></script>
+<?php
+if ($gallery == true) {
+?>
+<script defer src="/js/colorbox.js"></script>
+<script defer type="text/javascript">
+//<!-- hide javascript from validator
+$(document).ready(function(){
+    $('a[rel=gallery_image]').colorbox({
+        onOpen: function(){$('iframe').css('visibility','hidden');},
+        onClosed: function(){$('iframe').css('visibility','visible');},
+        maxWidth:'95%',
+        maxHeight:'95%',
+        scalePhotos:'true'
+    });
+
+    //<!-- Colorbox resize function -->
+    var resizeTimer;
+    function resizeColorBox(){
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if ($('#cboxOverlay').is(':visible')) {$.colorbox.load(true);}
+        }, 300)
+    }
+
+    //<!--  Resize Colorbox when resizing window or changing mobile device orientation -->
+    $(window).resize(resizeColorBox);
+    window.addEventListener("orientationchange", resizeColorBox, false);
+});
+// end hiding from validator -->
+</script>
+<?php
+}
+?>

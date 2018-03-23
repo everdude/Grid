@@ -10,4 +10,10 @@ if(empty($uri_segments[1])){
     $home = "1";
 }
 $pageTitle = "CSS Grid Layout Example";
+
+if ($gallery == true) {
+?>
+<link rel="stylesheet" href="/css/colorbox.css">
+<?php
+}
 ?>
