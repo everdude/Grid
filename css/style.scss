@@ -1,9 +1,12 @@
 @import "reset";
+@import 'vars';
 @import 'grid';
 @import 'header';
 @import 'nav';
 body{
     line-height: 1.4;
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
 }
 .hide{
     display: block;
@@ -16,14 +19,13 @@ svg text{
     @extend .hide;
 }
 a{
+    color: $green;
     &:hover,
     &:focus{
         text-decoration: none;
     }
 }
-.thumbnail-gallery img{
-    max-width:200px;
-}
+
 img,
 picture,
 video{
@@ -34,16 +36,48 @@ video{
 h1,h2,h3,h4,h5,h6,ol,ul,p,blockquote{
     margin:1em 0;
 }
-h1,
-.siteTitle{ font-size: 2em;}
-h2{ font-size: 1.875em;}
-h3{ font-size: 1.75em}
-h4{ font-size: 1.5em;}
-h5{ font-size: 1.25em;}
-h6{ font-size: 1.125em;}
+h1, .siteTitle{ font-size: 2em;font-family: 'Vollkorn', serif;}
+h2{ font-size: 1.875em;font-family: 'Vollkorn', serif; color: $green;}
+h3{ font-size: 1.75em;font-family: 'Vollkorn', serif;}
+h4{ font-size: 1.5em;font-family: 'Vollkorn', serif;}
+h5{ font-size: 1.25em;font-family: 'Vollkorn', serif;}
+h6{ font-size: 1.125em;font-family: 'Vollkorn', serif;}
+p,ul,ol{
+
+}
 blockquote{
     margin: 1em 1em 1em 2em;
     border-left: 4px solid #000;
     padding-left: 1em;
 }
+#content{
+    h1 + p:first-letter{
+        float: left;
+        font-family: Vollkorn,serif;
+        font-size: 4em;
+        line-height: 1em;
+        padding: 0 .0625em 0 0;
+    }
+}
+form{
+    label{
+        display: block;
+        &:first-letter{
+        // doesnt work on *    color: red;
+        }
+    }
+    input, textarea{
+        width: 100%;
+        padding: .5em;
+        border: .0625em #ccc solid;
+        border-radius:.5em;
+    }
+    input[type="submit"]{
+        cursor: pointer;
+        padding: .75em 5em;
+        width: auto;
+        font-size: 1em;
+    }
+}
+@import 'galleryImage';
 @import 'footer';
