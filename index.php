@@ -1,18 +1,19 @@
+<?php require_once("config.php"); ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS Grid Layout</title>
+        <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
+        <title><?php echo $pageTitle;?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
-        <?php require_once('includes/metadata.php'); ?>
     </head>
-    <?php require_once('includes/header.php'); ?>
+    <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
             <h2>Body content goes here</h2>
         </article>
         <aside id="sideBar">
             <h2>Sidbar conent goes here</h2>
         </aside>
-        <?php require_once('includes/footer.php'); ?>
+        <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>
     </body>
 </html>
