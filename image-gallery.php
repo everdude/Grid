@@ -1,15 +1,22 @@
+<?php
+require_once("config.php");
+$gallery = true
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Image Gallery - CSS Grid Layout</title>
-        <meta name="keywords" content="">
+        <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
+        <title>CSS Grid Image Gallery - <?php echo $pageTitle; ?></title>
+        <meta name="keywords" content="CSS Grid Layout, Portraits, Drawings, CSS Grid, Grid, Image Gallery, Gallery, Artwork, Fine Art, Oil Pastels, Adobe Illustrator, Charcoal, Sketch, vector art, gradient mesh">
         <meta name ="descrption" content="">
-        <?php require_once('includes/metadata.php'); ?>
     </head>
-    <?php require_once('includes/header.php'); ?>
+    <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
-            <h1>Image Gallery</h1>
-            <p>maybe instead see if i can do these using grid and add some more of my artwork for images. Then do a write up on how it works. maybe on a subpage or something.</p>
+            <h1>Artwork</h1>
+            <p>A sampling of some of my artwork I have created over the years. Something about different types of media I enjoy the most.</p>
+            <p>Charcoal. Why? Fast, forgiving.</p>
+            <p>Oil Pastels why? color, layering, like charcoal in a sense.</p>
+            <p>Adobe Illustrator. create realistic vector peices utilizing gradient mesh. Love the intrecte detail of creating the mesh. </p>
             <div class="gallery">
             <?php
                 $dirName = "images/gallery/";
@@ -20,23 +27,24 @@
                 foreach($images as $image){
                     if($i == 0){
             ?>
-                        <p><img alt="" id="gallery" src="<?php echo $image; ?>"></p>
-        				<ul class="thumbnail-gallery">
+                        <!-- <p><img alt="" id="gallery" src="<?php echo $image; ?>"></p> -->
+        				<ul class="thumbnail-gallery gallery">
             <?php
                     }
                     list($width, $height) = getimagesize($image);
                     $ratio = $width / $height;
             ?>
-                    <li <?php
-                    if ($ratio > "2.5") {
-                        echo "class='wide'";
-                    }
-                    elseif ($ratio < ".5") {
-                        echo "class='tall'";
-                    } ?> >
+                    <li class="gallery-item <?php
+                            if ($ratio > "1.9") {
+                                echo 'wide';
+                            }
+                            elseif ($ratio < ".75") {
+                                echo 'tall';
+                            }
+                        ?>">
                         <!-- <p>width: <?php echo $width;?> height: <?php echo $height;?> ratio: <?php echo $ratio;?></p> -->
-                        <a href="#gallery" onclick="getElementById('gallery').src=getElementById('thumb<?php echo $i; ?>').src;">
-        				<img alt="width: <?php echo $width;?> height: <?php echo $height;?> ratio: <?php echo $ratio;?>" id="thumb<?php echo $i; ?>" src="<?php echo $image; ?>">
+                        <a href="<?php echo $image;?>" rel="gallery_image" >
+        				<img class="gallery-thumbs" src="<?php echo $image; ?>">
                         </a>
         			</li>
             <?php
@@ -51,8 +59,35 @@
 
         </article>
         <aside id="sideBar">
-            <p>could put the link to the writeup here or something.</p>
+            <h2>How to create a CSS Grid Image Gallery</h2>
+            <p>I wanted to see if I could create a simple matience free image gallery using CSS Grid Layout. Below details the steps I took to acheive the result.</p>
+            <p>For more details be sure to visit my article on <a href="/articles/css-grid-layout">CSS Grid Layout</a>.</p>
+            <ol>
+                <li>
+                    <p>Create an unordered list.</p>
+                    <code>
+                        .thumbnail-gallery { <br>
+                            display: grid; <br>
+                            grid-gap: 2em; <br>
+                            grid-template-columns: repeat(auto-fit,minmax(8.75em,1fr)); <br>
+                            grid-auto-rows: 150px; <br>
+                            grid-auto-flow: row dense; <br>
+                        }
+                    </code>
+                </li>
+                <li><p>Use the PHP Glob function to get the images from the directory.</p></li>
+                <li><p>Use PHP to get the lenght and widths of images. Do some math to find the ratio. If the ratio is greater than 2.5 add wide class. If the ratio is less than .5 then add the tall class.</p>
+                    <p>
+                        <code>
+                            .thumbnail-gallery li.wide { <br>
+                                grid-column-start: 1; <br>
+                                grid-column-end: 4; <br>
+                            }
+                        </code>
+                    </p></li>
+                <li><p>Use Lightbox </p></li>
+            </ol>
         </aside>
-        <?php require_once('includes/footer.php'); ?>
+        <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>
     </body>
 </html>
