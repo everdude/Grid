@@ -198,8 +198,7 @@ nav#mobile-nav:target + #dark-cover + #outer-wrap {
     position: relative;
     right: auto;
     z-index: 0;
-    background: #785050;
-    color: #000; }
+    background: #785050; }
     nav#nav:target {
       width: auto;
       overflow: auto;
@@ -212,7 +211,7 @@ nav#mobile-nav:target + #dark-cover + #outer-wrap {
       width: 0; }
     nav a {
       text-decoration: none;
-      color: #000; } }
+      color: #fff; } }
 @media screen and (min-width: 64.063em) {
   nav ul {
     text-align: center;
@@ -255,7 +254,7 @@ h2 {
   color: #1f6b45; }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.625em;
   font-family: 'Vollkorn', serif; }
 
 h4 {
@@ -281,6 +280,18 @@ blockquote {
   font-size: 4em;
   line-height: 1em;
   padding: 0 .0625em 0 0; }
+
+.duties {
+  overflow: auto;
+  color: #888;
+  margin: auto 1em;
+  padding: .25em; }
+  .duties li {
+    float: left;
+    font-style: italic;
+    padding: 0 1em; }
+    .duties li:first-child {
+      border-left: 4px solid #888; }
 
 form label {
   display: block; }

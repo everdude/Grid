@@ -13,27 +13,49 @@
             <h2>Sites</h2>
             <ul>
                 <li>
-                    <h3><a href="">canr site. migration, Development, response design</a></h3>
-                    <p>responsible for implementing dozens of responsive sites before switching to common template.</p>
+                    <h3><a href="http://www.canr.msu.edu/">College of Agriculture & Natural Resources</a></h3>
+                    <ul class="duties">
+                        <li>Development</li>
+                        <li>CMS Migraition</li>
+                    </ul>
+                    <p>Part of Michigan State University, migration, Development, response design. responsible for implementing dozens of responsive sites before switching to common template. Migraition to new CMS</p>
                 </li>
                 <li>
-                    <h3><a href="">Michigan Agriculture Environmental Assurance Program</a></h3>
+                    <h3><a href="http://www.maeap.org/">Michigan Agriculture Environmental Assurance Program</a></h3>
+                    <ul class="duties">
+                        <li>Development</li>
+                    </ul>
                     <p>Add summary</p>
                 </li>
                 <li>
-                    <h3><a href="">mshn design Development</a></h3>
-                    <p>Add summary</p>
+                    <h3><a href="http://midstatehealthnetwork.org/">Mid-State Health Network</a></h3>
+                    <ul class="duties">
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
+                    <p>Add summary.</p>
                 </li>
                 <li>
-                    <h3><a href="">spartan printing Development</a></h3>
+                    <h3><a href="http://printspartan.com/">Spartan Printing &amp; Promotional Products</a></h3>
+                    <ul class="duties">
+                        <li>Development</li>
+                    </ul>
                     <p>developent. set up wordpress blog</p>
                 </li>
                 <li>
-                    <h3><a href="">Gratiot County Community Mental Health - now gratiot integrated health network</a></h3>
-                    <p>Add summary</p>
+                    <h3><a href="http://www.gihn-mi.org/">Gratiot Integrated Health Network</a></h3>
+                    <ul class="duties">
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
+                    <p>Formally Gratiot County Community Mental Health, designed and installed a custom WordPress template.</p>
                 </li>
                 <li>
-                    <h3><a href="">jackson community college</a></h3>
+                    <h3><a href="https://www.jccmi.edu/">Jackson Community College</a></h3>
+                    <ul class="duties">
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
                     <p>Add summary</p>
                 </li>
             </ul>

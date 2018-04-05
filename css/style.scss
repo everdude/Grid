@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,ol,ul,p,blockquote{
 }
 h1, .siteTitle{ font-size: 2em;font-family: 'Vollkorn', serif;}
 h2{ font-size: 1.875em;font-family: 'Vollkorn', serif; color: $green;}
-h3{ font-size: 1.75em;font-family: 'Vollkorn', serif;}
+h3{ font-size: 1.625em;font-family: 'Vollkorn', serif;}
 h4{ font-size: 1.5em;font-family: 'Vollkorn', serif;}
 h5{ font-size: 1.25em;font-family: 'Vollkorn', serif;}
 h6{ font-size: 1.125em;font-family: 'Vollkorn', serif;}
@@ -57,6 +57,21 @@ blockquote{
         font-size: 4em;
         line-height: 1em;
         padding: 0 .0625em 0 0;
+    }
+}
+.duties{
+    overflow: auto;
+    color: #888;
+    margin: auto 1em;
+    //background-color: #f1f1f1;
+    padding: .25em;
+    li{
+        float: left;
+        font-style: italic;
+        padding:0 1em;
+        &:first-child{
+            border-left: 4px solid #888;
+        }
     }
 }
 form{

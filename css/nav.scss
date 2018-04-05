@@ -81,7 +81,6 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
         right: auto;
         z-index: 0;
         background: rgba(120,80,80,1);
-        color: #000;
         &#nav:target{
             width: auto;
             overflow: auto;
@@ -96,7 +95,7 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
         }
         a{
             text-decoration: none;
-            color: #000;
+            color: #fff;
         }
     }
 }
