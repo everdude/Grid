@@ -18,8 +18,8 @@ nav{
     }
     li{
         &.active a,
-        &:hover a,
-        &:focus a{
+        & a:hover,
+        & a:focus{
             text-decoration: underline;
         }
     }
@@ -92,6 +92,10 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
             height: 0;
             overflow: hidden;
             width: 0;
+        }
+        ul{
+            list-style: none !important;
+            margin: 0 !important;
         }
         a{
             text-decoration: none;

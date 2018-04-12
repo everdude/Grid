@@ -142,7 +142,7 @@ nav {
     margin: 0;
     padding: 0;
     line-height: 1.3; }
-  nav li.active a, nav li:hover a, nav li:focus a {
+  nav li.active a, nav li a:hover, nav li a:focus {
     text-decoration: underline; }
   nav a {
     text-decoration: none;
@@ -209,6 +209,9 @@ nav#mobile-nav:target + #dark-cover + #outer-wrap {
       height: 0;
       overflow: hidden;
       width: 0; }
+    nav ul {
+      list-style: none !important;
+      margin: 0 !important; }
     nav a {
       text-decoration: none;
       color: #fff; } }
@@ -269,42 +272,166 @@ h6 {
   font-size: 1.125em;
   font-family: 'Vollkorn', serif; }
 
+.wrapper ul, ol {
+  list-style: disc;
+  margin: auto 0 auto 1em; }
+  .wrapper ul li, ol li {
+    margin: .25em 0; }
+
 blockquote {
   margin: 1em 1em 1em 2em;
   border-left: 4px solid #000;
   padding-left: 1em; }
 
-#content h1 + p:first-letter {
-  float: left;
-  font-family: Vollkorn,serif;
-  font-size: 4em;
-  line-height: 1em;
-  padding: 0 .0625em 0 0; }
+#content {
+  /*
+  h1 + p:first-letter{
+      float: left;
+      font-family: Vollkorn,serif;
+      font-size: 4em;
+      line-height: 1em;
+      padding: 0 .0625em 0 0;
+  }
+  */ }
 
-.duties {
+.caption {
+  font-style: italic;
+  font-size: .875em;
+  color: #888; }
+
+.wrapper .duties {
   overflow: auto;
   color: #888;
   margin: auto 1em;
+  border-left: 4px dotted #888;
+  list-style: none;
   padding: .25em; }
-  .duties li {
+  .wrapper .duties li {
     float: left;
     font-style: italic;
     padding: 0 1em; }
-    .duties li:first-child {
-      border-left: 4px solid #888; }
 
-form label {
+form.contactForm label {
   display: block; }
-form input, form textarea {
+  form.contactForm label::before {
+    content: "* ";
+    color: red; }
+form.contactForm input, form.contactForm textarea {
   width: 100%;
-  padding: .5em;
-  border: .0625em #ccc solid;
-  border-radius: .5em; }
-form input[type="submit"] {
+  padding: .675em .5em;
+  border: .125em #ccc solid;
+  border-radius: .5em;
+  font-size: 1em; }
+  form.contactForm input:focus, form.contactForm input:hover, form.contactForm textarea:focus, form.contactForm textarea:hover {
+    border: 0.125em #1f6b45 solid;
+    outline-style: none; }
+form.contactForm input[type="submit"] {
   cursor: pointer;
   padding: .75em 5em;
   width: auto;
-  font-size: 1em; }
+  font-size: 1em;
+  border: 0.125em #1f6b45 solid;
+  color: #1f6b45; }
+  form.contactForm input[type="submit"]:hover, form.contactForm input[type="submit"]:focus {
+    background-color: #1f6b45;
+    color: #fff; }
+
+code {
+  display: block;
+  background: #f1f1f1;
+  border: 1px #666666 solid;
+  padding: .5em 1em;
+  width: auto;
+  font-family: monospace; }
+
+.indent {
+  margin-left: 25px;
+  display: block; }
+
+.indent2ndlevel {
+  margin-left: 50px; }
+
+.indent3rdlevel {
+  margin-left: 75px; }
+
+/* nav styles below */
+#Article #optionA {
+  background: #333333; }
+
+#TestHeader {
+  z-index: 2;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  margin: 0px;
+  padding: 0; }
+
+#TestNav {
+  position: relative;
+  margin: 0px;
+  padding: 0;
+  width: 100%; }
+
+#TestNav li {
+  list-style: none;
+  float: left;
+  background: #003366;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0px; }
+
+#TestNav li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  margin: 0;
+  display: block;
+  width: 100px;
+  border: none; }
+
+#TestNav li:hover a {
+  color: #333333;
+  background-color: #d06f1a; }
+
+#optionA ul, #optionB ul, #optionC ul, #optionD ul {
+  display: none; }
+
+#optionA:hover ul, #optionB:hover ul, #optionC:hover ul, #optionD:hover ul {
+  display: block; }
+
+#TestNav li ul {
+  margin: 0px;
+  padding: 0px;
+  position: absolute; }
+
+#TestNav li ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  position: relative; }
+
+#TestNav li ul li a {
+  display: block;
+  padding: 5px 8px;
+  font-weight: normal;
+  margin: 0px;
+  line-height: normal;
+  font-size: 9pt;
+  width: 100px; }
+
+#TestNav li ul li a:hover {
+  color: white;
+  background-color: #003366; }
+
+#TestContent {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin: 0px;
+  padding: 0px; }
 
 .thumbnail-gallery {
   display: grid;
