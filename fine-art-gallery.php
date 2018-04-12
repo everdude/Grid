@@ -6,16 +6,16 @@ $gallery = true
 <html>
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
-        <title>CSS Grid Image Gallery - <?php echo $pageTitle; ?></title>
+        <title>Fine Art Gallery - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="CSS Grid Layout, Portraits, Drawings, CSS Grid, Grid, Image Gallery, Gallery, Artwork, Fine Art, Oil Pastels, Adobe Illustrator, Charcoal, Sketch, vector art, gradient mesh">
         <meta name ="descrption" content="">
     </head>
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
-            <h1>Artwork</h1>
+            <h1>Fine Art Gallery</h1>
             <p>A sampling of some of my artwork I have created over the years. Something about different types of media I enjoy the most.</p>
-            <p>Charcoal. Why? Fast, forgiving.</p>
-            <p>Oil Pastels why? color, layering, like charcoal in a sense.</p>
+            <p>Charcoal. Why? Fast, forgiving. variable line width, not exact</p>
+            <p>Oil Pastels why? color, layering, like charcoal in a sense. not exact</p>
             <p>Adobe Illustrator. create realistic vector peices utilizing gradient mesh. Love the intrecte detail of creating the mesh. </p>
             <div class="gallery">
             <?php
@@ -27,7 +27,6 @@ $gallery = true
                 foreach($images as $image){
                     if($i == 0){
             ?>
-                        <!-- <p><img alt="" id="gallery" src="<?php echo $image; ?>"></p> -->
         				<ul class="thumbnail-gallery gallery">
             <?php
                     }
@@ -42,7 +41,6 @@ $gallery = true
                                 echo 'tall';
                             }
                         ?>">
-                        <!-- <p>width: <?php echo $width;?> height: <?php echo $height;?> ratio: <?php echo $ratio;?></p> -->
                         <a href="<?php echo $image;?>" rel="gallery_image" >
         				<img class="gallery-thumbs" src="<?php echo $image; ?>">
                         </a>
@@ -80,12 +78,19 @@ $gallery = true
                     <p>
                         <code>
                             .thumbnail-gallery li.wide { <br>
-                                grid-column-start: 1; <br>
-                                grid-column-end: 4; <br>
+                                grid-column: 1/3; <br>
                             }
                         </code>
+                    </p>
+                    <p>
+                        <code>
+                            .thumbnail-gallery li.tall {<br>
+                              grid-row: 1/3;<br>
+                              height: 21em; <br>
+                          }
+                        </code>
                     </p></li>
-                <li><p>Use Lightbox </p></li>
+                <li><p>Use colorbox </p></li>
             </ol>
         </aside>
         <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>
