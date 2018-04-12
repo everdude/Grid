@@ -27,7 +27,7 @@ else{
 <html>
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
-        <title>Contact - <?php echo $pageTitle; ?></title>
+        <title>Contact - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
     </head>

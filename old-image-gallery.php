@@ -3,7 +3,7 @@
 <html>
     <head>
         <?php require_once('includes/metadata.php'); ?>
-        <title>Image Gallery - <?php echo $pageTitle; ?></title>
+        <title>Image Gallery - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
     </head>

@@ -3,7 +3,7 @@
 <html>
     <head>
         <?php require_once(SITE_ROOT."/includes/metadata.php"); ?>
-        <title>Articles - <?php echo $pageTitle; ?></title>
+        <title>Articles - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
     </head>

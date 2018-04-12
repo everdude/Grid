@@ -6,7 +6,7 @@ $captcha = true;
 <html>
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
-        <title>Contact - <?php echo $pageTitle; ?></title>
+        <title>Contact - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
         <script src='https://www.google.com/recaptcha/api.js'></script>

@@ -6,12 +6,12 @@
             <?php
             if($home == "1"){
             ?>
-                <h1 class="siteTitle"><a href="/"><?php echo $pageTitle; ?></a></h1>
+                <h1 class="siteTitle"><a href="/"><?php echo $siteTitle; ?></a></h1>
             <?php
             }
             else{
             ?>
-                <p class="siteTitle"><a href="/"><?php echo $pageTitle; ?></a></p>
+                <p class="siteTitle"><a href="/"><?php echo $siteTitle; ?></a></p>
             <?php
             }
             ?>

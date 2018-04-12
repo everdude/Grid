@@ -3,7 +3,7 @@
 <html>
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
-        <title>Schema Markup - <?php echo $pageTitle; ?></title>
+        <title>Schema Markup - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="">
         <meta name ="descrption" content="">
     </head>

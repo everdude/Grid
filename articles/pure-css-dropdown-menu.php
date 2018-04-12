@@ -3,9 +3,9 @@
 <html>
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
-        <title>Pure CSS Drop Down Menu - <?php echo $pageTitle; ?></title>
-        <meta name="keywords" content="">
-        <meta name ="descrption" content="">
+        <title>Pure CSS Drop Down Menu - <?php echo $siteTitle; ?></title>
+        <meta name="keywords" content="Brad Everett, Pure CSS Drop Down Menu, li drop down menu, html drop down menu, html li drop down menu, css menu, css drop down menu, tutorial, IE7 z-index bug solution, IE7 z-index bug, z-index bug, ul li menu, html list menu">
+        <meta name ="descrption" content="Pure CSS Drop Down Menu">
     </head>
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
