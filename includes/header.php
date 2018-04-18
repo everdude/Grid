@@ -1,5 +1,5 @@
 <body<?php if($home == "1"){?> class="home"<?php }?>>
-<p class="hide"><a href="#content">skip to main content</a></p>
+<p class="hide"><a href="#content">skip to main content</a> <a href="#nav">skip to navigation</a></p>
 <div class="banner <?php if($home == "1"){?> home <?php }?>">
     <div class="wrapper">
         <header>
@@ -16,12 +16,12 @@
             }
             ?>
             <p id="nav-button" class="nav-button">
-                <a id="mobile-nav-anchor" href="#nav">
-                <svg class="mobile-menu">
+                <button id="mobile-nav-anchor">
+                    <svg class="mobile-menu">
                     <text>Mobile Menu</text>
                     <use xlink:href="#menu-search-icon"></use>
                 </svg>
-                </a>
+            </button>
             </p>
         </header>
     </div>

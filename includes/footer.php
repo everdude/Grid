@@ -1,15 +1,15 @@
 <nav id="nav">
-    <p class="close"><a href="#return">
+    <p class="close"><button>
         <svg class="close-icon">
             <use xlink:href="#close-icon"></use>
         </svg> Close
-    </a></p>
+    </button></p>
     <?php include(SITE_ROOT.'/includes/pages.php'); ?>
-    <p class="close"><a href="#return">
+    <p class="close"><button>
         <svg class="close-icon">
-            <use xlink:href="#close-icon"></use>
+            <use xlink:href="javascript:void(0)-icon"></use>
         </svg> Close
-    </a></p>
+    </button></p>
 </nav>
 <div id="dark-cover" aria-label="Mobile Only - on click, close mobile menu"></div>
 <footer>
@@ -25,7 +25,6 @@
 </div><!-- end wrapper -->
 <?php require_once(SITE_ROOT.'/includes/svg.html'); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
 <script defer src="/js/scripts.min.js"></script>
 <?php
 if ($gallery == true) {
