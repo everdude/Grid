@@ -4,9 +4,12 @@
 @import 'header';
 @import 'nav';
 body{
+    transition: 0.5s;
     line-height: 1.4;
     font-size: 1em;
     font-family: 'Merriweather', serif;
+    position: relative;
+    right: 0;
 }
 .hide{
     display: block;
@@ -42,6 +45,9 @@ h3{ font-size: 1.625em;font-family: 'Vollkorn', serif;}
 h4{ font-size: 1.5em;font-family: 'Vollkorn', serif;}
 h5{ font-size: 1.25em;font-family: 'Vollkorn', serif;}
 h6{ font-size: 1.125em;font-family: 'Vollkorn', serif;}
+button:hover,button:focus{
+    cursor: pointer; 
+}
 .wrapper ul,ol{
     list-style:disc;
     margin: auto 0 auto 1em;
@@ -55,15 +61,6 @@ blockquote{
     padding-left: 1em;
 }
 #content{
-    /*
-    h1 + p:first-letter{
-        float: left;
-        font-family: Vollkorn,serif;
-        font-size: 4em;
-        line-height: 1em;
-        padding: 0 .0625em 0 0;
-    }
-    */
 }
 .caption{
     font-style: italic;
@@ -96,7 +93,7 @@ form.contactForm{
         }
     }
     input, textarea{
-        width: 100%;
+        width: 96%;
         padding: .675em .5em;
         border: .125em #ccc solid;
         border-radius:.5em;
