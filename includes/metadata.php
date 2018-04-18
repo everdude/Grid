@@ -9,4 +9,4 @@ if ($gallery == true) {
 <?php
 }
 ?>
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather%7CVollkorn" rel="stylesheet">
