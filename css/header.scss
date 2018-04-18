@@ -1,13 +1,33 @@
+.banner{
+    background:url('/images/IMG_5280.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
 header{
     position: relative;
+    height: 10em;
+    a{
+        color: #fff;
+    }
+}
+
+body.home{
+
 }
 
 // tablet
 @media only screen and (min-width:40.063em) {
-
+    body.home{
+        header{
+            height: 20em;
+        }
+    }
 }
 
 // desktop
 @media only screen and (min-width:64.063em) {
-
+    body.home{
+        header{
+            height: 25em;
+        }
+    }
 }

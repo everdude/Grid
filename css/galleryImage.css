@@ -1,0 +1,29 @@
+.thumbnail-gallery {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1em;
+  grid-auto-flow: row dense; }
+  .thumbnail-gallery li {
+    overflow: hidden; }
+  .thumbnail-gallery img {
+    min-width: 200px; }
+
+@media screen and (min-width: 40.063em) {
+  .thumbnail-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(8.75em, 1fr));
+    grid-column-gap: 1em;
+    overflow: hidden;
+    grid-template-rows: 10em; }
+    .thumbnail-gallery li {
+      overflow: hidden;
+      height: 10em; }
+      .thumbnail-gallery li.wide {
+        grid-column: 1/3; }
+      .thumbnail-gallery li.tall {
+        grid-row: 1/3;
+        height: 21em; }
+        .thumbnail-gallery li.tall img {
+          height: 100%;
+          max-width: -webkit-fill-available; } }
+
+/*# sourceMappingURL=galleryImage.css.map */

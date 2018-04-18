@@ -1,15 +1,19 @@
 //mobile menu
+#mobile-nav-anchor,p.close button {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
 nav{
     width: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
-    right: -250px;
+    right: 0;
     height: 100%;
     z-index: 10;
-    transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
     background-color: #282829;
     color: #fff;
+    transition: 0.5s;
     ul {
         list-style: none;
         margin: 0;
@@ -17,9 +21,11 @@ nav{
         line-height: 1.3;
     }
     li{
+        position: relative;
+        margin: 0 !important;
         &.active a,
-        &:hover a,
-        &:focus a{
+        & a:hover,
+        & a:focus{
             text-decoration: underline;
         }
     }
@@ -27,36 +33,23 @@ nav{
         text-decoration: none;
         color: #fff;
         display: block;
-        padding: 1em 3em;
+        padding: 1em 1.75em;
     }
 }
-nav#nav:target {
-    display: block;
-    transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-    right: 0;
-    width: 15em;
-    padding: 0;
-    overflow-y: visible;
-    z-index: 500;
-}
-nav#nav:target+#dark-cover {
+#dark-cover {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 0;
+    height: 0;
     z-index: 200;
-    background-color: rgba(0,0,0,0.7);
-    transition: background-color 150ms ease;
+    background-color: rgba(0,0,0,0.5);
     &:hover{
         cursor: pointer;
     }
 }
-nav#mobile-nav:target+#dark-cover+#outer-wrap{
-    overflow:hidden
-}
 #nav-button{
     position: absolute;
-    top:-1em;
+    top:-.5em;
     right: 0;
 }
 .close-icon{
@@ -80,8 +73,7 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
         position: relative;
         right: auto;
         z-index: 0;
-        background-color: #ccc;
-        color: #000;
+        background: rgba(120,80,80,1);
         &#nav:target{
             width: auto;
             overflow: auto;
@@ -89,15 +81,35 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
             transition: none;
         }
         .close{
-            display: block;
+            display: none;
             height: 0;
             overflow: hidden;
             width: 0;
         }
-        a{
-            text-decoration: none;
-            color: #000;
+        ul{
+            list-style: none !important;
+            margin: 0 !important;
+            li{
+                &.active a:after{
+                    width: 0;
+                    height: 0;
+                    border-top: .75em solid transparent;
+                    border-bottom: .75em solid transparent;
+                    border-left: .5em solid #fff;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    bottom: 0;
+                    margin: auto 0;
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
         }
+
     }
 }
 // desktop menu
@@ -108,6 +120,19 @@ nav#mobile-nav:target+#dark-cover+#outer-wrap{
             margin: 0 auto;
             li{
                 display: inline-block;
+                &.active a:after{
+                    width: 0;
+                    height: 0;
+                    border-left: 1em solid transparent;
+                    border-right: 1em solid transparent;
+                    border-bottom: .5em solid #fff;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -31px;
+                    margin: auto;
+                }
             }
         }
     }

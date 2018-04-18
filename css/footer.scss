@@ -24,4 +24,18 @@
 }
 footer{
     text-align: center;
+    .copywrite{
+        font-size: .75em;
+    }
+    .footer-links{
+        text-align: center;
+        margin: 0 auto;
+        li{
+            display: inline-block;
+            a{
+                padding: .5em 1em;
+                display: block;
+            }
+        }
+    }
 }
