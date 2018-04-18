@@ -1,6 +1,6 @@
 <?php require_once("config.php");?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
         <title>Sitemap - <?php echo $siteTitle; ?></title>

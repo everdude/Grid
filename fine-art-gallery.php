@@ -3,7 +3,7 @@ require_once("config.php");
 $gallery = true
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
         <title>Fine Art Gallery - <?php echo $siteTitle; ?></title>

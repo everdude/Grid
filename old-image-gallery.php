@@ -1,6 +1,6 @@
 <?php $gallery = true ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <?php require_once('includes/metadata.php'); ?>
         <title>Image Gallery - <?php echo $siteTitle; ?></title>
