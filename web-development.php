@@ -5,7 +5,7 @@
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
         <title>Web Development - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="Website Design, web site design, Development, Web developent, CSS, Cascading Style Sheets, HTML, HTML5, SASS, SCSS, XHTML, code, freelance, php, Velocity, JavaScript, java, jQuery">
-        <meta name ="descrption" content="">
+        <meta name ="descrption" content="Websites that Brad Everett has designed and developed">
     </head>
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">

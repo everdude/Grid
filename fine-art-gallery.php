@@ -8,7 +8,7 @@ $gallery = true
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
         <title>Fine Art Gallery - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="CSS Grid Layout, Portraits, Drawings, CSS Grid, Grid, Image Gallery, Gallery, Artwork, Fine Art, Oil Pastels, Adobe Illustrator, Charcoal, Sketch, vector art, gradient mesh">
-        <meta name ="descrption" content="">
+        <meta name ="descrption" content="A sampling of some of my artwork I have created over the years displayed using CSS Grid Layout">
     </head>
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
@@ -42,7 +42,7 @@ $gallery = true
                             }
                         ?>">
                         <a href="<?php echo $image;?>" rel="gallery_image" >
-        				<img class="gallery-thumbs" src="<?php echo $image; ?>">
+        				<img class="gallery-thumbs" alt="" src="<?php echo $image; ?>">
                         </a>
         			</li>
             <?php

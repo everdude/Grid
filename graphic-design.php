@@ -5,7 +5,7 @@
         <?php require_once(SITE_ROOT.'/includes/metadata.php'); ?>
         <title>Graphic Design - <?php echo $siteTitle; ?></title>
         <meta name="keywords" content="Graphic Design, Graphic Art, Artist, pms, pantone, 2 color, two color, Brad Everett, freelance, logo, freelance logo design, Adobe Creative Cloud, QuarkXPress, Quite Imposing, Pitstop, Mac, PC">
-        <meta name ="descrption" content="">
+        <meta name ="descrption" content="Various Graphic Designs and Graphic Art designed and created by Brad Everett for print.">
     </head>
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
