@@ -10,6 +10,7 @@
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
             <h1>Pure CSS Drop Down Menu</h1>
+            <p class="publishDate">Date Published: May 21, 2009</p>
             <p>Here is a tutorial for a pure CSS horizontal drop down menu. No Javascript is needed for this solution. It is tested in Firefox, Opera, Chrome, Safari, Internet Explorer 7 and 8. You don't have to be worried about the supposed "IE7 z-index bug" either. No hacks are needed to achieve this, just pay close attention to where the z-index is placed below. The xhtml and the CSS both validate for this solution. On IE 6 it will show only the top menus, and not the drop downs. So if your solution requires IE 6 compliance, this solution is not for you. However, it is a good learning exercise. Personally, I cannot understand why people still hold on to a browser that is over ten years old. It is simply beyond me. But I digress...</p>
             <h2>Step 1 &ndash; setting up the html</h2>
             <p>Set up the html as shown below. You will need to have a separate div for the menu and the rest of the content to allow the drop downs to set on top of the content via the z-index property. The id on the Body tag will be used to show the active or current page on the button.</p>
@@ -180,6 +181,33 @@
             <div id="TestContent">
             <p>Content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer purus. Mauris quis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             </div>
+            <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Article",
+                "mainEntityOfPage": [{
+                    "@type": "URL",
+                    "targetUrl": "<?php echo $site;?>"
+                }],
+                "headline": "Pure CSS Drop Down Menu",
+                "url": "<?php echo $site.$uri_path; ?>",
+                "datePublished": "2018-1-11EST12:00AM",
+                "author": [{
+                    "@type": "Person",
+                    "name": "Brad Everett",
+                    "givenName": "Brad",
+                    "familyName": "Everett",
+                    "url": ""
+                }],
+                "publisher": [{
+                    "@type": "",
+                    "name": "",
+                    "logo": "",
+                    "url": ""
+                }],
+                "articleBody": "A tutorial for a pure CSS horizontal drop down menu with no JavaScript.",
+            }
+            </script>
         </article>
         <aside id="sideBar">
 
