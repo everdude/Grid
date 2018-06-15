@@ -57,6 +57,7 @@ $gallery = true
 
         </article>
         <aside id="sideBar">
+            <!--
             <h2>How to create a CSS Grid Image Gallery</h2>
             <p>I wanted to see if I could create a simple matience free image gallery using CSS Grid Layout. Below details the steps I took to acheive the result.</p>
             <p>For more details be sure to visit my article on <a href="/articles/css-grid-layout">CSS Grid Layout</a>.</p>
@@ -90,8 +91,9 @@ $gallery = true
                           }
                         </code>
                     </p></li>
-                <li><p>Use colorbox </p></li>
+                <li><p>Use <a href="http://www.jacklmoore.com/colorbox/">colorbox</a> to set up the lightbox. </p></li>
             </ol>
+        -->
         </aside>
         <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>
     </body>

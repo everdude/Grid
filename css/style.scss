@@ -36,17 +36,20 @@ video{
     max-width: 100%;
     height: auto;
 }
-h1,h2,h3,h4,h5,h6,ol,ul,p,blockquote{
+ol,ul,p,blockquote{
     margin:1em 0;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: .6875em 0;
+}
 h1, .siteTitle{ font-size: 2em;font-family: 'Vollkorn', serif;}
-h2{ font-size: 1.875em;font-family: 'Vollkorn', serif; color: $green;}
-h3{ font-size: 1.625em;font-family: 'Vollkorn', serif;}
-h4{ font-size: 1.5em;font-family: 'Vollkorn', serif;}
+h2{ font-size: 1.75em;font-family: 'Vollkorn', serif; color: $green;}
+h3{ font-size: 1.6625em;font-family: 'Vollkorn', serif;}
+h4{ font-size: 1.375em;font-family: 'Vollkorn', serif;}
 h5{ font-size: 1.25em;font-family: 'Vollkorn', serif;}
 h6{ font-size: 1.125em;font-family: 'Vollkorn', serif;}
 button:hover,button:focus{
-    cursor: pointer; 
+    cursor: pointer;
 }
 .wrapper ul,ol{
     list-style:disc;
@@ -54,6 +57,9 @@ button:hover,button:focus{
     li{
         margin: .25em 0;
     }
+}
+strong{
+    font-weight: 900;
 }
 blockquote{
     margin: 1em 1em 1em 2em;
