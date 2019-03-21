@@ -10,6 +10,7 @@
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
             <h1>Responsive Images</h1>
+            <p>Here is an example of responsive images. resize the browser to see different images load at different screen sizes. I'll be documenting this more as I finish up my site.</p>
             <picture>
                 <!-- desktop -->
                 <source srcset="/images/desktop_stepBro.jpg" media="(min-width:64.063em)" alt="step brothers meme">
@@ -20,7 +21,7 @@
                 <!-- non compliant browsers -->
                 <img src="/images/IE_stepBro.jpg" alt="step brothers meme">
             </picture>
-            
+<?php /*
             <code>
                 <picture>
                     <!-- desktop -->
@@ -33,6 +34,7 @@
                     <img src="/images/IE_stepBro.jpg" alt="step brothers meme">
                 </picture>
             </code>
+            */ ?>
         </article>
         <aside id="sideBar">
 

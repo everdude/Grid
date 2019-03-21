@@ -10,6 +10,7 @@
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
             <h1>CSS Grid Layout</h1>
+            <p>I built this site using CSS Grid as an experiment and learning opportunity. I'll be documenting this process as I finish the site.</p>
 
         </article>
         <aside id="sideBar">

@@ -10,8 +10,8 @@
     <?php require_once(SITE_ROOT.'/includes/header.php'); ?>
         <article id="content">
             <h2>Welcome</h2>
-            <p>Welcome to BradEvertt.com, where Brad prides himself on delivering quality media to his clients, whether in print, or digital form. Having an expertise in a wide range of media, from website design, graphic design, to 3d animation. Brad can promote your business utilizing a wide variety of formats in a timely and professional matter.</p>
-            <p>Serving the Lansing and greater Mid Michigan area, Brad believes in bringing an intelligent approach to design, that incorporates consistency, trendy, accurate pieces that are tailored to each individual client.</p>
+            <p>This site is serving as a place to learn about CSS Grid and other things. I'll be documenting my progress as I learn new things. </p>
+            <p>There is also some of my work on here as well. Enjoy.</p>
         </article>
         <aside id="sideBar">
             <section>
