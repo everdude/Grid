@@ -12,19 +12,19 @@
             <h1>Articles</h1>
             <ul class="article-list">
                 <li class="article">
-                    <h2><a href="/articles/responsive-images">Responsive Images</a></h2>
+                    <h2><a href="/articles/responsive-images.php">Responsive Images</a></h2>
                     <p class="publishDate">Date Published: </p>
                 </li>
                 <li class="article">
-                    <h2><a href="/articles/css-grid-layout">CSS Grid Layout</a></h2>
+                    <h2><a href="/articles/css-grid-layout.php">CSS Grid Layout</a></h2>
                     <p class="publishDate">Date Published: </p>
                 </li>
                 <li class="article">
-                    <h2><a href="/articles/schema-markup">Schema Markup</a></h2>
+                    <h2><a href="/articles/schema-markup.php">Schema Markup</a></h2>
                     <p class="publishDate">Date Published: </p>
                 </li>
                 <li class="article">
-                    <h2><a href="/articles/pure-css-dropdown-menu">Pure CSS Dropdown Menu</a></h2>
+                    <h2><a href="/articles/pure-css-dropdown-menu.php">Pure CSS Dropdown Menu</a></h2>
                     <p class="publishDate">Date Published: May 21, 2009</p>
                 </li>
             </ul>

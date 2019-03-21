@@ -15,13 +15,13 @@
         </article>
         <aside id="sideBar">
             <section>
-                <h3><a href="/web-development">Web Development</a></h3>
+                <h3><a href="/web-development.php">Web Development</a></h3>
                 <p>Are you looking to start a website or need some updates on an existing one? Brad is the answer. Webpages will be created to be viewed in major browsers. All sites are custom and will be designed according to your needs.</p>
             </section>
             <section>
-                <h3><a href="/fine-art-gallery">Fine Art Gallery</a></h3>
+                <h3><a href="/fine-art-gallery.php">Fine Art Gallery</a></h3>
                 <p>As an artist, Brad loves to just sit down and draw with his media of choice, charcoal. Brad specializes in portraiture and figure drawing. This is more of a hobby of his, but he does offer it as a service. Below you will find some samples of Brad's work.</p>
-                <p><a href="/fine-art-gallery">View his art work</a></p>
+                <p><a href="/fine-art-gallery.php">View his art work</a></p>
             </section>
         </aside>
         <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>

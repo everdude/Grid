@@ -14,8 +14,8 @@
 <div id="dark-cover" aria-label="Mobile Only - on click, close mobile menu"></div>
 <footer>
     <ul class="footer-links">
-        <li><a href="/sitemap">Sitemap</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/sitemap.php">Sitemap</a></li>
+        <li><a href="/contact.php">Contact</a></li>
     </ul>
     <p class="copywrite">&copy; <?php echo date("Y"); ?> <a href="/">Brad Everett</a>. All Rights Reserved.</p>
 </footer>
