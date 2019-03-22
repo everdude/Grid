@@ -14,7 +14,7 @@ $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$responceKey."&
 $result = file_get_contents($url);
 $data = json_decode($result);
 
-if($result['success'] == true){
+if($data->success == true){
     $captcha = "Pass";
     mail ($email, strtoupper($from), $message, $femail, "From: $email");
 }
