@@ -12,29 +12,35 @@
             <h1>Resume</h1>
             <section>
                 <h2>Recent Accomplishmenets</h2>
-                    <ul>
-                        <li>Created dozens of custom responsive templates </li>
-                        <li>Migrated dozens of websites into a common responsive template,  saving design and development time and resources</li>
-                        <li>Created custom content types, information architecture and taxonomies unifying hundreds of website structures under one umbrella, allowing for rapid development and feature rollout.</li>
-                        <li>Implement Schema into content types to increase SEO for hundreds of websites.</li>
-                        <li> Lead the migration of dozens of websites into a new content management system. Met with stakeholders of the websites being migrated and set up schedules and coordinated migration efforts.</li>
-                        <li>Created custom reusable dynamic content listings and pieces of functionality that can utilize custom APIs from different systems to be reused across hundreds of websites. </li>
-                    </ul>
+                <ul>
+                    <li>Created dozens of custom responsive templates </li>
+                    <li>Migrated dozens of websites into a common responsive template,  saving design and development time and resources</li>
+                    <li>Created custom content types, information architecture and taxonomies unifying hundreds of website structures under one umbrella, allowing for rapid development and feature rollout.</li>
+                    <li>Implement Schema into content types to increase SEO for hundreds of websites.</li>
+                    <li> Lead the migration of dozens of websites into a new content management system. Met with stakeholders of the websites being migrated and set up schedules and coordinated migration efforts.</li>
+                    <li>Created custom reusable dynamic content listings and pieces of functionality that can utilize custom APIs from different systems to be reused across hundreds of websites. </li>
+                </ul>
             </section>
             <section>
                 <h2>Skills</h2>
                 <ul>
-			<li>Prepress and design aptitude.</li>
-			<li>Experiential implementation of computer graphic software training.</li>
-			<li>Communication with clients to produce problem solving solutions to exceed the clients needs.</li>
-			<li>Able to work in a self starting environment.</li>
-			<li>Cross platform knowledge and experience of both Mac and PC computers.</li>
-			<li>Creating prepress and other media specific ready projects.</li>
-			<li>Working towards group goals in a team oriented atmosphere.</li>
-			<li>Create effective traffic and sales producing websites.</li>
-			<li>Adobe CS3, QuarkXpress, Pitstop, Quite Imposing, Publisher, Dreamweaver, and Flash.</li>
-			<li>HTML, CSS, and PHP.</li>
-		</ul>
+                    <li>HTML</li>
+                    <li>CSS & CSS Grid</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Apache Velocity</li>
+                    <li>JSON</li>
+                    <li>XML</li>
+                    <li>PHP</li>
+                    <li>Responsive Design</li>
+                    <li>Accessibility</li>
+                    <li>SEO</li>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                    <li>Adobe CC</li>
+                    <li>QuarkXpress</li>
+                    <li>Mac and PC computers</li>
+                </ul>
             </section>
             <section>
                 <h2>Work Experience</h2>

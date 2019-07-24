@@ -4,8 +4,11 @@
     grid-gap: 1em;
 
     grid-auto-flow: row dense;
-    li{
+    .gallery-item{
         overflow: hidden;
+        a{
+            display:block;
+        }
     }
     img{
         min-width:200px;

@@ -3,8 +3,10 @@
   grid-template-columns: 100%;
   grid-gap: 1em;
   grid-auto-flow: row dense; }
-  .thumbnail-gallery li {
+  .thumbnail-gallery .gallery-item {
     overflow: hidden; }
+    .thumbnail-gallery .gallery-item a {
+      display: block; }
   .thumbnail-gallery img {
     min-width: 200px; }
 
