@@ -1,10 +1,10 @@
-<body<?php if($home == "1"){?> class="home"<?php }?>>
+<body<?php if($home == true){?> class="home"<?php }?>>
 <p class="hide"><a href="#content">skip to main content</a> <a href="#nav">skip to navigation</a></p>
-<div class="banner <?php if($home == "1"){?> home <?php }?>">
+<div class="banner <?php if($home == true){?> home <?php }?>">
     <div class="wrapper">
         <header>
             <?php
-            if($home == "1"){
+            if($home == true){
             ?>
                 <h1 class="siteTitle"><a href="/"><?php echo $siteTitle; ?></a></h1>
             <?php

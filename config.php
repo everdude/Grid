@@ -11,7 +11,7 @@ $uri_segments = explode('/', $uri_path);
 
 //set homepage var
 if(empty($uri_segments[1])){
-    $home = "1";
+    $home = true;
 }
 
 // set site title
